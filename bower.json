@@ -1,0 +1,23 @@
+{
+  "name": "busproject",
+  "description": "This is the Master's Thesis project for Sara Maria Garcia Cabello regarding GPS Tracking and Scheduling",
+  "main": "app.js",
+  "authors": [
+    "Sara Maria Garcia Cabello"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "git",
+    "repository:",
+    "https://github.com/mcamachotx/BusProject.git"
+  ],
+  "moduleType": [],
+  "homepage": "www.realfakestories.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

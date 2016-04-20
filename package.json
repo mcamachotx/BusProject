@@ -1,0 +1,19 @@
+{
+  "name": "busproject",
+  "version": "1.0.0",
+  "description": "This is the Master's Thesis project for Sara Maria Garcia Cabello regarding GPS Tracking and Scheduling",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "git",
+    "repository: https://github.com/mcamachotx/BusProject.git"
+  ],
+  "author": "Sara Maria Garcia Cabello",
+  "license": "ISC"
+}

@@ -1,0 +1,16 @@
+html, body, #map-canvas {
+    height: 100%;
+    margin: 0px;
+    padding: 0px
+}
+#directionsPanel {
+    overflow: auto;
+}
+#directions-panel2 {
+    overflow: auto;
+}
+.title-text{
+    font-weight: bold;
+    text-align:center;
+    color: red;
+}
