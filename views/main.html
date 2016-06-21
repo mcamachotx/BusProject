@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<nav class="navbar navbar-static-top navbar-dark bg-inverse">
+    <form action="" class="form-inline">
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon">Empieza en</span>
+                <input id="start" class="form-control" type="text" value="" style="width:300px;">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon">Termina en</span>
+                <input id="end" class="form-control" type="text" value="" style="width:300px;">
+            </div>
+        </div>
+        <input type="button" class="btn btn-success" value="Obtén la ruta" ng-click="calcRoute()">
+    </form>
+</nav>
+<!--<dropdown></dropdown>-->
+
+<div id="control" >
+
+    <br><br><div class="title-text">Puntos de ascenso y descenso</div> <br>
+    <select id="end2" ng-model="myStops" ng-change="calcRoute2()">
+        <option value="25.43491,-101.003909"> 1: Francisco Coss y Presidente Cárdenas</option>
+        <option value="sarmiento, saltillo, coahuila, mexico"> 2: Francisco Coss y Manuel Acuña</option>
+        <option value=""> 3: Francisco Coss esquina con Nicolás Bravo</option>
+        <option value=""> 4: Francisco Coss y Dionisio García</option>
+        <option value=""> 5: Francisco Coss y La Llave</option>
+        <option value=""> 6: Francisco Coss y Nazario Ortíz</option>
+        <option value=""> 7: Reforma pasando calle Magisterio</option>
+        <option value=""> 8: Reforma pasando Walmart</option>
+        <option value=""> 9: Reforma y Calle de la Escuela</option>
+        <option value=""> 10: Blvd. Fundadores y Cristóbal Pereas</option>
+        <option value=""> 11: Blvd. Fundadores pasando Blvd. Morelos</option>
+        <option value=""> 12: Blvd. Fundadores pasando calle 17</option>
+        <option value=""> 13: Blvd. Fundadores y Solidaridad</option>
+        <option value=""> 14: Blvd. Fundadores pasando Blvd. Colosio</option>
+        <option value=""> 15: Blvd. Fundadores y calle a Loma Linda</option>
+        <option value=""> 16: Universidad Autónoma de Coahuila Campus Arteaga</option>
+        <option value=""> 17: Centro de Gobierno</option>
+        <option value=""> 18: Blvd. Fundadores y Calle Manantiales</option>
+        <option value=""> 19: Blvd. Fundadores y Calle de los Cerritos</option>
+        <option value=""> 20: Blvd. Fundadores y Lindero del Sauz</option>
+        <option value=""> 21: Blvd. Fundadores antes de Eulalio Gutiérrez</option>
+        <option value=""> 22: Blvd. Fundadores antes de Las Azucenas</option>
+        <option value=""> 23: Reforma antes de 10 de Mayo</option>
+        <option value=""> 24: Francisco Coss en la Alberca Olímpica</option>
+        <option value=""> 25: Francisco Coss y Dionisio García</option>
+        <option value=""> 26: Francisco Coss antes de Candela</option>
+
+    </select>
+
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <button type="button" class="btn btn-info" ng-click="terrainButton()">Terreno</button>
+        <button type="button" class="btn btn-info" ng-click="roadMapButton()">Calles</button>
+        <button type="button" class="btn btn-info" ng-click="satelliteButton()">Satélite</button>
+        <button type="button" class="btn btn-info" ng-click="hybridButton()">Híbrido</button>
+        <button type="button" class="btn btn-info" ng-click="trafficButton()">Tráfico</button>
+        <button type="button" class="btn btn-info" ng-click="bicycleButton()">Bicicleta</button>
+        <button type="button" class="btn btn-info" ng-click="transitButton()">Autobuses Públicos</button>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <div id="map-canvas" style="height: 700px; border:10px solid; border-radius: 25px;" ng-init="initialize()"></div>
+        </div>
+        <div class="col-md-4">
+            <div id="directionsPanel" class="panels"></div>
+            <div id="directionsPanel3" class="panels">
+                <p>Distancia Total: <span id="total"></span></p>
+            </div>
+            <div id="directions-panel2" class="panels"></div>
+        </div>
+    </div>
+</div>
+</html>

@@ -4,6 +4,13 @@
 module.exports = function(grunt) {
 
     grunt.initConfig({
+        serve:{
+            options:{
+                port: 9000,
+                src: ['index.html']
+
+            }
+        },
         pkg: grunt.file.readJSON('package.json'),
         concat: {
             options: {
