@@ -13,6 +13,5 @@
 				templateUrl:'views/main.html',
 				controller: 'mainController'
 			});
-		console.log('meow');
 	}]);
 })();
