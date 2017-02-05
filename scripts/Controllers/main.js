@@ -1,7 +1,7 @@
 /**
  * Created by Miguel on 5/11/2016.
  */
-(function ()
+(function mainStageController()
 {
     "use strict";
     angular
@@ -10,8 +10,8 @@
 
     MainController.$inject = ['$scope'];
     
-    function MainController($scope) {
-
+    function MainController($scope)
+    {
 
         var rendererOptions = {
             draggable: true
@@ -226,7 +226,6 @@
             $scope.map.setCenter(options.position);
         }
 
-
         function setMarkers(map, locations) {
             var imageFlag;
             var shape;
@@ -351,7 +350,6 @@
             document.getElementById('total').innerHTML = total + ' km';
         }
 
-
         function terrainButton()
         {
             $scope.map.setMapTypeId(google.maps.MapTypeId.TERRAIN);
@@ -392,8 +390,6 @@
             transitLayer = new google.maps.TransitLayer();
             transitLayer.setMap($scope.map);
         }
-
-
-    };
+    }
 
 })();

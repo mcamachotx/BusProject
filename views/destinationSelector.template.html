@@ -1,0 +1,6 @@
+<div id="control">
+    <br><br><div class="title-text">Puntos de ascenso y descenso</div> <br>
+    <select id="end2">
+        <option ng-repeat="stops in busStops" value="{{stops.latitude}},{{stops.longitude}}">{{stops.stopName}}</option>
+    </select>
+</div>
