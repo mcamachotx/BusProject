@@ -21,20 +21,16 @@
         <input type="button" class="btn btn-success" value="Obtén la ruta" ng-click="calcRoute()">
     </form>
 </nav>
-<!--<dropdown></dropdown>-->
 
-<div id="control" >
+<div id="control">
 
     <br><br><div class="title-text">Puntos de ascenso y descenso</div> <br>
     <select id="end2" >
         <option ng-repeat="stops in busStops" value="{{stops.latitude}},{{stops.longitude}}">{{stops.stopName}}</option>
     </select>
-
 </div>
 
-</div>
-
-<div class="container-fluid">
+<div class="map-control-panel">
     <div class="row">
         <button type="button" class="btn btn-info" ng-click="terrainButton()">Terreno</button>
         <button type="button" class="btn btn-info" ng-click="roadMapButton()">Calles</button>
@@ -44,6 +40,8 @@
         <button type="button" class="btn btn-info" ng-click="bicycleButton()">Bicicleta</button>
         <button type="button" class="btn btn-info" ng-click="transitButton()">Autobuses Públicos</button>
     </div>
+</div>
+<div class="directional-panel container-fluid">
     <div class="row">
         <div class="col-md-8">
             <div id="map-canvas" style="height: 700px; border:10px solid; border-radius: 25px;" ng-init="initialize()"></div>
