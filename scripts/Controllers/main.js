@@ -1,10 +1,16 @@
 /**
  * Created by Miguel on 5/11/2016.
  */
-(function () {
-"use strict";
-    var BusApp;
-    BusApp = angular.module('BusApp').controller('mainController', ['$scope', function ($scope) {
+(function ()
+{
+    "use strict";
+    angular
+    .module('BusApp')
+    .controller('MainController', MainController)
+
+    MainController.$inject = ['$scope'];
+    
+    function MainController($scope) {
 
 
         var rendererOptions = {
@@ -85,7 +91,6 @@
             };
             $scope.map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
             control = document.getElementById('control');
-            control.style.display = 'block';
             $scope.map.controls[google.maps.ControlPosition.TOP_CENTER].push(control);
             // Try HTML5 geolocation
             if (navigator.geolocation) {
@@ -389,6 +394,6 @@
         }
 
 
-    }]);
+    };
 
 })();
