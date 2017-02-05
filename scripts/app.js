@@ -11,7 +11,8 @@
 			.state('home',{
 				url:'/',
 				templateUrl:'views/main.html',
-				controller: 'mainController'
+				controller: 'MainController',
+				controllerAs: 'MainController'
 			});
 	}]);
 })();
