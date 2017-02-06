@@ -12,7 +12,6 @@
     
     function MainController($scope)
     {
-
         var rendererOptions = {
             draggable: true
         };
